@@ -1,0 +1,265 @@
+<div class="form-center">
+    <form class="form" [formGroup]="formu" class="example-form" autocomplete="off">
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">nmcliente</label>
+                <input type="number" formControlName="nmcliente" name="nmcliente" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('nmcliente')" role="alert">
+                    {{ getError('nmcliente')}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">nombres</label>
+                <input type="text" formControlName="nombres" name="nombres" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('nombres')" role="alert">
+                    {{ getError('nombres')}}
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">apellidos</label>
+                <input type="text" formControlName="apellidos" name="apellidos" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('apellidos')" role="alert">
+                    {{ getError('apellidos')}}
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">dsdireccion</label>
+                <input type="text" formControlName="dsdireccion" name="dsdireccion" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('dsdireccion')" role="alert">
+                    {{ getError('dsdireccion')}}
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">dsdireccion</label>
+                <input type="email" formControlName="dscorreo" name="dscorreo" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('dscorreo')" role="alert">
+                    {{ getError('dscorreo')}}
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">telefono</label>
+                <input type="text" formControlName="telefono" name="telefono" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('telefono')" role="alert">
+                    {{ getError('telefono')}}
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">cdtelefonoalter</label>
+                <input type="text" formControlName="cdtelefonoalter" name="cdtelefonoalter" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('cdtelefonoalter')" role="alert">
+                    {{ getError('cdtelefonoalter')}}
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">cdcelular</label>
+                <input type="text" formControlName="cdcelular" name="cdcelular" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('cdcelular')" role="alert">
+                    {{ getError('cdcelular')}}
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">idcargo</label>
+                <input type="number" formControlName="idcargo" name="idcargo" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('idcargo')" role="alert">
+                    {{ getError('idcargo')}}
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">cargo</label>
+                <input type="text" formControlName="cargo" name="cargo" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('cargo')" role="alert">
+                    {{ getError('cargo')}}
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">idciudad</label>
+                <input type="number" formControlName="idciudad" name="idciudad" class="form-control" id="exampleFormControlInput1" placeholder="">
+
+                <div class="alert alert-danger" *ngIf="getError('idciudad')" role="alert">
+                    {{ getError('idciudad')}}
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">ciudad</label>
+                <input type="text" formControlName="ciudad" name="ciudad" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('ciudad')" role="alert">
+                    {{ getError('ciudad')}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">fenacimiento</label>
+                <input type="date" formControlName="fenacimiento" name="fenacimiento" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('fenacimiento')" role="alert">
+                    {{ getError('fenacimiento')}}
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">genero</label>
+                <input type="text" formControlName="genero" name="genero" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('genero')" role="alert">
+                    {{ getError('genero')}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">idcomunidad</label>
+                <input type="number" formControlName="idcomunidad" name="idcomunidad" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('idcomunidad')" role="alert">
+                    {{ getError('idcomunidad')}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">comunidad</label>
+                <input type="text" formControlName="comunidad" name="comunidad" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('comunidad')" role="alert">
+                    {{ getError('comunidad')}}
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">empresalabora</label>
+                <input type="text" formControlName="empresalabora" name="empresalabora" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('empresalabora')" role="alert">
+                    {{ getError('empresalabora')}}
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">iddivision</label>
+                <input type="number" formControlName="iddivision" name="iddivision" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('iddivision')" role="alert">
+                    {{ getError('iddivision')}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">cus_dsdivision</label>
+                <input type="text" formControlName="cus_dsdivision" name="cus_dsdivision" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('cus_dsdivision')" role="alert">
+                    {{ getError('cus_dsdivision')}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">idpais</label>
+                <input type="number" formControlName="idpais" name="idpais" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('idpais')" role="alert">
+                    {{ getError('idpais')}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlInput1">pais</label>
+                <input type="text" formControlName="pais" name="pais" class="form-control" id="exampleFormControlInput1" placeholder="">
+                <div class="alert alert-danger" *ngIf="getError('pais')" role="alert">
+                    {{ getError('pais')}}
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="form-group ">
+                <label for="exampleFormControlTextarea1">hobbies</label>
+                <textarea class="form-control" formControlName="hobbies" name="hobbies" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="alert alert-danger" *ngIf="getError('hobbies')" role="alert">
+                    {{ getError('hobbies')}}
+                </div>
+            </div>
+
+        </div>
+        <div class="btnm" *ngIf="btn != 'VER' ">
+            <button type="button" (click)="SendButton()" class="btn btn-primary">{{btn}}</button>
+        </div>
+    </form>
+
+
+
+</div>

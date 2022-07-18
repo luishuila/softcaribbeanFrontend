@@ -1,0 +1,33 @@
+@import "./../../../../assets/style/Index.scss";
+table {
+    width: 100%;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+td,
+th {
+    width: 25%;
+}
+
+.tableStyle {
+    margin-top: 1em;
+    width: auto;
+    height: auto;
+    background: $ColorWhite;
+}
+
+.container {
+    background: $ColorWhite;
+}
+
+.rightbuttonrow {
+    direction: rtl;
+}
+
+.rightbutton {
+    margin: 1em;
+}
